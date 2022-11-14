@@ -69,7 +69,6 @@
 .btn-container {
   display: inline-flex;
   gap: 0.5rem;
-  width: 40%;
   height: auto;
   padding: 1rem;
 }
