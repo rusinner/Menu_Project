@@ -33,13 +33,14 @@
   width: 90%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
 }
 .menu-item {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem 2rem;
-  max-width: 25rem;
+  max-width: 45rem;
 }
 .photo {
   width: 100%;
@@ -54,11 +55,36 @@
   justify-content: space-between;
   width: 100%;
 }
+.item-info hr {
+  background: rgb(172, 146, 3);
+  height: 0.1rem;
+}
 .item-text {
   text-align: start;
+  padding: 0.7rem 0;
 }
 .price {
   color: rgb(172, 146, 3);
+}
+.btn-container {
+  display: inline-flex;
+  gap: 0.5rem;
+  width: 40%;
+  height: auto;
+  padding: 1rem;
+}
+.filter-btn {
+  border: 1px solid #fff;
+  color: rgb(172, 146, 3);
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.filter-btn:hover {
+  background: rgb(172, 146, 3);
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
